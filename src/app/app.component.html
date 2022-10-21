@@ -1,3 +1,9 @@
-<a routerLink="/Elements">Elements</a>
-<a routerLink="/Collections">Collections</a>
-<router-outlet></router-outlet>
+<div class="ui container">
+  <div class="ui sedondary pointing menu">
+    <a routerLink="/Elements" routerLinkActive="active" class="item">Elements</a>
+    <a routerLink="/Collections" routerLinkActive="active" class="item">Collections</a>
+  </div>
+  <div class="ui segment">
+    <router-outlet></router-outlet>
+  </div>
+</div>
