@@ -17,6 +17,11 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'Views',
+    loadChildren: () =>
+      import('./views/views.module').then((m) => m.ViewsModule),
+  },
+  {
     path: '',
     component: HomeComponent,
   },
